@@ -1,0 +1,31 @@
+import chess as ch
+import random as rd
+
+
+class Engine:
+    def __init__(self, board, maxDepth, color):
+        self.board = board
+        self.color = color
+        self.maxDepth = maxDepth
+
+
+def getBestMove(self):
+    return self.engine(None, 1)
+
+
+def evalFunct(self):
+    compt = 0
+    for i in range(64):
+    compt += self.squareResPoints(ch.SQUARES[i])
+    compt += self.mateOppotrunity() + self.oppening() + 0.001 * rd.random()
+    return compt
+
+
+def mateOpportunity(self):
+    if self.board.legal_moves.count() == 0:
+    if self.board.turn == self.color:
+        return -999
+    else:
+        return 999
+    else:
+        return 0
